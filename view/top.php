@@ -1,5 +1,5 @@
 <?php
-require_once('lib/print.php');
+require_once('C:\Users\rlaeh\OneDrive\바탕 화면\PHP_Training\lib\print.php');
 ?>
 <!DOCTYPE html>
 <html>

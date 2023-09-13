@@ -1,17 +1,20 @@
 <?php
+if(isset($_GET["id"])){
+    $id = $_GET["id"];
+}
 
 function print_title(){
-        if(isset($_GET['id'])){
-            echo htmlspecialchars($_GET['id']);
+        if(isset($id)){
+            echo htmlspecialchars($id);
         }else{
             echo "Welcome";
         }
 }
 
 function print_description(){
-        if(isset($_GET["id"])){
-            $basename = basename($_GET["id"]);
-            echo htmlspecialchars(file_get_contents("data/".$basename));
+        if(isset($id)){
+            $basename = basename($id);
+            echo htmlspecialchars(file_get_contents("C:\Users\rlaeh\OneDrive\바탕 화면\PHP_Training\data/".$basename));
         }else{
             echo "Hello, PHP";
         }
